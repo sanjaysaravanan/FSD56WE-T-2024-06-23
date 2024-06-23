@@ -78,16 +78,6 @@ Authentication & Authorization:
     
     To hide the FE pages we need the authStatus in the browser
 
-Next Session:
-  Authorization Flow:
-
-    Application flow after successfull login:
-      1. use the token from the login response
-      2. APIs except /login, /register, read movies API should contain the request header 
-         authorization/acesstoken: < jwt-token >
-      3. backend will use this token to verify the roles or access or permission of the user in backend
-
-
 Task:
   please revise today's topics - Try to implement Login & Registration Flow discussed in the session
   Create a new separate google account for development related tasks
@@ -103,3 +93,10 @@ Next Session:
       for the login status,
       2. use local storage to store the token
         then restrict the user access with role
+    Authorization Flow:
+
+    Application flow after successfull login:
+      1. use the token from the login response
+      2. APIs except /login, /register, read movies API should contain the request header 
+         authorization/acesstoken: < jwt-token >
+      3. backend will use this token to verify the roles or access or permission of the user in backend
